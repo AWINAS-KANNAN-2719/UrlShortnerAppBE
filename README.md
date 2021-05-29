@@ -11,7 +11,7 @@
 * Java
 * Spring boot 2.5
 * Maven
-* Junit
+* Junit 5
 * H2 Database
 
 
