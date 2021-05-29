@@ -1,5 +1,10 @@
 # UrlShortnerApp - Back End 
 
+# Features 
+
+1) Create short url of actual url with short url's length not more then 10 Alphanumeric charaters
+2) Know all the Short url details with access count
+3) By entering short url, we will be navigated to actual url
 
 # Steps to Run the application
 
