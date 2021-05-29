@@ -29,7 +29,8 @@ The Applicaition will run in localhost:8080
 
 # Code coverage file location
 
-After maven clean install comman is run , the coverage of code coverage of application will be generated
+After maven clean install command is executed , the code coverage of application will be generated which can be 
+seen in below file.
 
 File location : UrlShortnerAppBE\target\site\jacoco\index.html
 
