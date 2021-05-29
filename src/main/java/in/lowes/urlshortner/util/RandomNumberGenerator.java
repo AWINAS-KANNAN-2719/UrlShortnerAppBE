@@ -2,25 +2,12 @@ package in.lowes.urlshortner.util;
 
 import java.util.Random;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RandomNumberGenerator {
 
-	private static RandomNumberGenerator instance;
 	private static final String ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvwxyz0123456789";
-
-	private RandomNumberGenerator() {
-
-	}
-
-	public static RandomNumberGenerator getInstance() {
-		if (instance == null) {
-			synchronized (RandomNumberGenerator.class) {
-				if (instance == null) {
-					instance = new RandomNumberGenerator();
-				}
-			}
-		}
-		return instance;
-	}
 
 	/**
 	 * @return generated alpha numeric string

@@ -7,8 +7,9 @@ public enum HttpCodes {
 	HTTP_203("200", "URL_SHORT_203", "Original Url Retrieved"),
 	HTTP_400_1("400", "URL_SHORT_401", "Original Url Already present"),
 	HTTP_400_2("400", "URL_SHORT_402", "No Records in table"),
-	HTTP_400_3("400", "URL_SHORT_403", "Input url is invalid"),
-	HTTP_400_4("400", "URL_SHORT_404", "Invalis short url");
+	HTTP_400_3("400", "URL_SHORT_403", "Input url is invalid"), 
+	HTTP_400_4("400", "URL_SHORT_404", "Invalid short url");
+
 	private String httpCode;
 	private String specificCode;
 	private String description;
@@ -29,6 +30,16 @@ public enum HttpCodes {
 
 	public String getDescription() {
 		return description;
+	}
+
+	public static HttpCodes resolveHTTPCode(String specificCode) {
+		HttpCodes code = null;
+		for (HttpCodes codes : HttpCodes.values()) {
+			if (codes.getSpecificCode() == specificCode) {
+				code = codes;
+			}
+		}
+		return code;
 	}
 
 }

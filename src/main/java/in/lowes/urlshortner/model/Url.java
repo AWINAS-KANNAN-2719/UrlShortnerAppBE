@@ -33,16 +33,6 @@ public class Url {
 		this.accessCount = 0;
 	}
 
-	public Url(Long id, String originalUrl, String shortUrl) {
-		this.id = id;
-		this.originalUrl = originalUrl;
-		this.shortUrl = shortUrl;
-	}
-
-	public Url(String originalUrl) {
-		this.originalUrl = originalUrl;
-	}
-
 	public Long getId() {
 		return id;
 	}

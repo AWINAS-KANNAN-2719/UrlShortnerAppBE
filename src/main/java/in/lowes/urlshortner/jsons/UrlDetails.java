@@ -21,6 +21,9 @@ public class UrlDetails extends ResponseJson {
 	@JsonInclude(Include.NON_NULL)
 	private Integer accessCount;
 
+	public UrlDetails() {
+	}
+	
 	public UrlDetails(final HttpCodes httpCodes) {
 		this.httpCode = httpCodes.getHttpCode();
 		this.responseCode = httpCodes.getSpecificCode();

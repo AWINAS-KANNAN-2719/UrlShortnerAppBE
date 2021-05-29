@@ -18,6 +18,8 @@ public class UrlListJson extends ResponseJson {
 	@JsonInclude(Include.NON_NULL)
 	List<Url> urlList;
 
+	public UrlListJson() {}
+	
 	public UrlListJson(final HttpCodes httpCodes) {
 		this.httpCode = httpCodes.getHttpCode();
 		this.responseCode = httpCodes.getSpecificCode();

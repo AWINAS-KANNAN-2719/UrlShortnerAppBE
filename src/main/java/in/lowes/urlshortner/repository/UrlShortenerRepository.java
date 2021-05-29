@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import in.lowes.urlshortner.model.Url;
 
-//@RepositoryRestResource(collectionResourceRel = "shortner", path = "shortner")
+
 @Repository
 public interface UrlShortenerRepository extends JpaRepository<Url, Long> {
 
