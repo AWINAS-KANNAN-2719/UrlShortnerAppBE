@@ -11,7 +11,7 @@ Prerequisite : Git , Maven
 
 The Applicaition will run in localhost:8080
 
-# Test coveration file location
+# Code coverage file location
 
 After maven clean install comman is run , the coverage of code coverage of application will be generated
 
@@ -23,7 +23,9 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
 1) Create  short url :
    
    Url :  http://localhost:8080/urlshortner/shorten?origUrl=https://www.google.com
+   
    Method : POST
+   
    Output :
    {
     "httpCode": "200",
@@ -35,9 +37,12 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     "accessCount": 0
  }
  
- 2) Get All Url details with access count :
+ 2) Get All Url details with access count : 
+ 
     Url : http://localhost:8080/urlshortner/urls
+    
     Method : GET
+    
     Output :
     {
     "httpCode": "200",
@@ -72,8 +77,11 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
   }
  
 3) Redirect using short url :
+
     Url: http://localhost:8080/gp3f790ds
+    
     Method : GET
+    
     Output:
     {
     "httpCode": "200",
