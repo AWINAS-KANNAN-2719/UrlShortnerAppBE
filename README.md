@@ -6,13 +6,24 @@
 2) Know all the Short url details with access count
 3) By entering short url, we will be navigated to actual url
 
+# Stack 
+
+* Java
+* Spring boot 2.5
+* Maven
+* Junit
+* H2 Database
+
+
+
 # Steps to Run the application
 
 Prerequisite : Git , Maven
 
 1) git clone https://github.com/AWINAS-KANNAN-2719/UrlShortnerAppBE.git
-2) mvn clean install
-3) mvn spring-boot:run
+2) cd UrlShortnerAppBE
+3) mvn clean install
+4) mvn spring-boot:run
 
 The Applicaition will run in localhost:8080
 
@@ -23,7 +34,7 @@ After maven clean install comman is run , the coverage of code coverage of appli
 File location : UrlShortnerAppBE\target\site\jacoco\index.html
 
 
-# Sample Api calls
+# API End Point details
 
 1) Create  short url :
    
