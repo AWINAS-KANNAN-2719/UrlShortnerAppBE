@@ -18,7 +18,7 @@ After maven clean install comman is run , the coverage of code coverage of appli
 File location : UrlShortnerAppBE\target\site\jacoco\index.html
 
 
-#Sample Api calls
+# Sample Api calls
 
 1) Create  short url :
    
@@ -35,7 +35,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     "accessCount": 0
  }
  
- 2) Get All Url details with access count
+ 2) Get All Url details with access count :
     Url : http://localhost:8080/urlshortner/urls
     Method : GET
     Output :
@@ -70,8 +70,8 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
         }
     ]
   }
-  
-  3)Redirect using short url
+ 
+3) Redirect using short url :
     Url: http://localhost:8080/gp3f790ds
     Method : GET
     Output:
