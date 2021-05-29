@@ -44,6 +44,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
    Method : POST
    
    Output :
+   ```json
    {
     "httpCode": "200",
     "responseCode": "URL_SHORT_201",
@@ -52,7 +53,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     "shortUrl": "gp3f790ds",
     "originalUrl": "https://www.google.com",
     "accessCount": 0
- }
+   } 
  
  2) Get All Url details with access count : 
  
@@ -61,6 +62,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     Method : GET
     
     Output :
+    ```json
     {
     "httpCode": "200",
     "responseCode": "URL_SHORT_202",
@@ -90,8 +92,8 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
             "originalUrl": "https://www.lowes.in",
             "accessCount": 0
         }
-    ]
-  }
+       ]
+      }
  
 3) Redirect using short url :
 
@@ -100,6 +102,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     Method : GET
     
     Output:
+    ```json
     {
     "httpCode": "200",
     "responseCode": "URL_SHORT_203",
@@ -108,7 +111,7 @@ File location : UrlShortnerAppBE\target\site\jacoco\index.html
     "shortUrl": "gp3f790ds",
     "originalUrl": "https://www.google.com",
     "accessCount": 1
-  }
+    }
   
    
 
